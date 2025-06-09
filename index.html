@@ -29,164 +29,103 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Updated: Apr 20 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Tableau JS API -->
+  <script src="https://public.tableau.com/javascripts/api/viz_v1.js" defer></script>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Bintana's Tableau</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+    </div>
 
     <div class="search-bar">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
         <input type="text" name="query" placeholder="Search" title="Enter search keyword">
         <button type="submit" title="Search"><i class="bi bi-search"></i></button>
       </form>
-    </div><!-- End Search Bar -->
+    </div>
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
         <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
+          <a class="nav-link nav-icon search-bar-toggle" href="#">
             <i class="bi bi-search"></i>
           </a>
-        </li><!-- End Search Icon-->
-
+        </li>
         <li class="nav-item dropdown pe-3">
-
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/cinaselfie.jpg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Nibin</span>
-          </a><!-- End Profile Image Icon -->
-
+          </a>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Name: Bintana Wirasabilillah</h6>
-            </li>
-            <li class="dropdown-header">
-              <span>NPM: 2431012</span>
-            </li>
-            <li class="dropdown-header">
-              <span>Class: 2SIMB</span>
-            </li>
-          </ul><!-- End Profile Dropdown Items -->
-        </li><!-- End Profile Nav -->
-
+            <li class="dropdown-header"><h6>Name: Bintana Wirasabilillah</h6></li>
+            <li class="dropdown-header"><span>NPM: 2431012</span></li>
+            <li class="dropdown-header"><span>Class: 2SIMB</span></li>
+          </ul>
+        </li>
       </ul>
-    </nav><!-- End Icons Navigation -->
-
-  </header><!-- End Header -->
+    </nav>
+  </header>
 
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
-
     <ul class="sidebar-nav" id="sidebar-nav">
-
       <li class="nav-item">
-        <a class="nav-link active" href="dashboard.html">
+        <a class="nav-link active" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav -->
-
+      </li>
       <li class="nav-heading">Tugas</li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart1.html">
-                <span>Map Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart2.html">
-                <span>Bar Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart3.html">
-                <span>Bubble Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart4.html">
-                <span>Gantt Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart5.html">
-                <span>Line Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart6.html">
-                <span>Pie Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart7.html">
-                <span>Horizontal Bar Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart8.html">
-                <span>Tree Maps</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart9.html">
-                <span>Lollypop Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart10.html">
-                <span>Word Cloud</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart11.html">
-                <span>Histogram Chart</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart12.html">
-                <span>Scatter plot</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="chart13.html">
-                <span>Box Plot</span>
-            </a>
-        </li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart1.html"><span>Map Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart2.html"><span>Bar Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart3.html"><span>Bubble Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart4.html"><span>Gantt Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart5.html"><span>Line Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart6.html"><span>Pie Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart7.html"><span>Horizontal Bar Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart8.html"><span>Tree Maps</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart9.html"><span>Lollypop Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart10.html"><span>Word Cloud</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart11.html"><span>Histogram Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart12.html"><span>Scatter plot</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart13.html"><span>Box Plot</span></a></li>
     </ul>
-    
+  </aside>
 
-  </main><!-- End #main -->
+  <!-- ======= Main ======= -->
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Page</a></li>
+          <li class="breadcrumb-item active">Assignment</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Tableau Embed -->
+    <div class="tableauPlaceholder" style="width: 100%; height: 525px;">
+      <iframe 
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Data Visualization"
+        allowtransparency="true"
+        allowfullscreen="true"
+        style="width: 100%; height: 525px; border: none;"
+        src="https://public.tableau.com/views/VincentTableauCode/Dashboard1?:embed=y&:showVizHome=no&:tabs=no&:toolbar=yes">
+      </iframe>
+    </div>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -194,16 +133,14 @@
       &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
       Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+/
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
