@@ -112,19 +112,14 @@
       </nav>
     </div>
 
-    <!-- Tableau Embed -->
-    <div class="tableauPlaceholder" style="width: 100%; height: 525px;">
+   <div id="tableau-container" class="tableauPlaceholder" style="width: 100%; height: 525px;">
+    <div style="width: 100%; height: 525px; overflow: hidden;">
       <iframe 
+        src="https://public.tableau.com/views/VincentTableauCode/Dashboard1?:embed=y&:showVizHome=no&:tabs=no&:toolbar=no"
+        style="width: 100%; height: 600px; border: none; transform: translateY(-30px);"
         frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Data Visualization"
-        allowtransparency="true"
-        allowfullscreen="true"
-        style="width: 100%; height: 525px; border: none;"
-        src="https://public.tableau.com/views/VincentTableauCode/Dashboard1?:embed=y&:showVizHome=no&:tabs=no&:toolbar=yes">
+        allowfullscreen>
       </iframe>
-    </div>
   </main>
 
   <!-- ======= Footer ======= -->
@@ -153,6 +148,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  const interval = setInterval(() => {
+    const tableauBadge = document.querySelector('a[href*="tableau.com"]');
+    if (tableauBadge) {
+      tableauBadge.style.display = 'none'; // sembunyikan link ke Tableau Public
+      tableauBadge.parentElement.style.display = 'none'; // jika dibungkus lagi
+      clearInterval(interval); // stop interval
+    }
+  }, 500); // cek setiap 0.5 detik
+  </script>
 
 </body>
 
